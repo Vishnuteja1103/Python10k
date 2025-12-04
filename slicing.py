@@ -17,3 +17,9 @@ print(e5)
 print(e6)
 print(e7)
 
+e8=s2[::-1] #to print the complete string reverse using postivie slicing index.
+e9=s2[-1:-30:-1]  #to print the complete string reverse using negative  slicing index.
+
+print(s2)
+print(e8)
+print(e9)
