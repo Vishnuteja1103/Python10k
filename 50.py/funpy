@@ -1,0 +1,533 @@
+#                                         #   1.print numbers from 1 to 10
+# def numbers():
+#     for i in range(1,11):
+#         print(i)
+# numbers()
+#                                             # 2.print numbers from 10 to 1
+# def reversenumbers():
+#     for i in range(10,0,-1):
+#         print(i)
+# reversenumbers()
+#                                     # 3.print all even numbers from 1 to 20
+# def even_numbers():
+#     for i in range(1,21):
+#         if(i%2==0):
+#             print(i)
+# even_numbers()
+#                                         # 4.print all odd numbers from 1 to 20
+# def odd_numbers():
+#     for i in range(1,21):
+#         if(i%2!=0):
+#             print(i)
+# odd_numbers()
+#                                         # 5.Find sum of numbers from 1 to 20
+# def sum_num(num):
+#     sum=0
+#     for i in range(1,num+1):
+#         sum=sum+i
+#     print(sum)
+# sum_num(20)
+#                                         # 6.Find sum of even numbers from 1 to 100
+# def sum_even(num):
+#     sum=0
+#     for i in range(1,num+1):
+#         if(i%2==0):
+#             sum=sum+i
+#     return sum
+# print(sum_even(100))
+#                                         # 7.Find sum of odd numbers from 1 to 100
+# def sum_odd(num):
+#     sum=0
+#     for i in range(1,num+1):
+#         if(i%2!=0):
+#             sum=sum+i
+#     print(sum)
+# sum_odd(100)
+#                                         # 8.print multiplication table of given number
+# def multi_table(num):
+#     for i in range(1,11):
+#         print(num,"*",i,"=",num*i)
+# multi_table(8)
+#                                         # 9.count how many numbers are there from 1 to n
+# def count_numbers(num):
+#     count=0
+#     i=1
+#     while(i<=num):
+#         count=count+1
+#         i=i+1
+#     return count
+# print(count_numbers(18))
+#                                             # 10.Find factorial of given number
+# def factorial(num):
+#     fact=1
+#     for i in range(2,num+1):
+#         fact=fact*i
+#     print(fact)
+# factorial(5)
+#                                             # 11.count number of digits in a number
+# def count_digits(num):
+#     count=0
+#     while(num):
+#         count=count+1
+#         num=num//10
+#     return count
+# print(count_digits(123456))
+#                                                 # 12.find sum of digits of a number
+# # (a)without parameters
+# def sum_digits():
+#     num=int(input("Enter number: "))
+#     sum=0
+#     while(num):
+#         rem=num%10
+#         sum=sum+rem
+#         num=num//10
+#     print(sum)
+# sum_digits()
+#                                                     # 13.reverse a given number
+# def reverse_number():
+#     num=int(input("Enter number: "))
+#     reverse=0
+#     while(num):
+#         rem=num%10
+#         reverse=reverse*10+rem
+#         num=num//10
+#     print(reverse)
+# reverse_number()
+#                                             # 14.check whether a number is positive negative or zero
+# def number_type(num):
+#     if(num==0):
+#         return "Number is ZERO"
+#     elif(num>0):
+#         return "Number is POSITIVE"
+#     else:
+#         return "Number is NEGATIVE"
+# print(number_type(-8))
+#                                                 # 15.Find the largest digit in a number
+# def largest_digit(num):
+#     large=0
+#     while(num):
+#         rem=num%10
+#         if(rem>large):
+#             large=rem
+#         num=num//10
+#     return large
+# print(largest_digit(91111))
+#                                             # 16.check whether a number is palindome or not
+# def palindrome_not(num):
+#     num1=num
+#     reverse=0
+#     while(num1):
+#         rem=num1%10
+#         reverse=reverse*10+rem
+#         num1=num1//10
+#     if(reverse==num):
+#         return "PALINDROME"
+#     else:
+#         return "NOT A PALINDROME"
+# result=palindrome_not(1221)
+# print(result)
+#                                                         # 17.check whether a number is prime or not
+# def prime_not():
+#     num=int(input("Enter number: "))
+#     count=2
+#     for i in range(2,num):
+#         if(num%i==0):
+#             count=count+1
+#             break
+#     if(count==2):
+#         print("PRIME")
+#     else:
+#         print("NOT A PRIME")
+# prime_not()
+#                                         # 18.print all prime numbers from 1 to 100
+# def prime_numbers():
+#     for i in range(1,101):
+#         count=0
+#         for j in range(1,i+1):
+#             if(i%j==0):
+#                 count=count+1
+#         if(count==2):
+#             print(i)
+# prime_numbers()
+# 19.count number of factors for a given number
+# def factors():
+#     num=int(input("Enter number: "))
+#     fact=0
+#     for i in range(1,num+1):
+#         if(num%i==0):
+#             fact=fact+1
+#     print(fact)
+# factors()
+# 20.print all factors of a given number
+# def factors_all():
+#     factors=[]
+#     num=int(input("enter number: "))
+#     for i in range(1,num+1):
+#         if(num%i==0):
+#             factors.append(i)
+#     print(factors)
+# factors_all()
+# 21.check whether a number is perfect or not
+# def perfect_not(num):
+#     sum=0
+#     for i in range(1,num):
+#         if(num%i==0):
+#             sum=sum+i
+#     if(sum==num):
+#         print("PERFECT NUMBER")
+#     else:
+#         print("NOT A PERFECT NUMBER")
+# perfect_not(496)
+# 22.perfect numbers from 1 to 100
+# def perfect_numbers():
+#     for i in range(1,101):
+#         sum=0
+#         for j in range(1,i):
+#             if(i%j==0):
+#                 sum=sum+j
+#         if(sum==i):
+#             print(i)
+# perfect_numbers()
+# 23.check whether a number is strong or not
+# def strong_not(num):
+#     num1=num
+#     sum=0
+#     while(num1):
+#         rem=num1%10
+#         fact=1
+#         for i in range(1,rem+1):
+#             fact=fact*i
+#         sum=sum+fact
+#         num1=num1//10
+#     if(sum==num):
+#         print("STRONG NUMBER")
+#     else:
+#         print("NOT A STRONG NUMBER")
+# 24.print all strong numbers from 1 to 1000
+# def strong_numbers():
+#     for i in range(1,1001):
+#         num=i
+#         sum=0
+#         while(num):
+#             rem=num%10
+#             fact=1
+#             for j in range(1,rem+1):
+#                 fact=fact*j
+#             sum=sum+fact
+#             num=num//10
+#             if(sum==i):
+#                 print(i)
+# strong_numbers()
+# 25.check whether a number is armstrong or not
+# def armstrong_not():
+#     num=int(input("Enter number: "))
+#     num1=num
+#     num2=num
+#     count=0
+#     sum=0
+#     while(num1):
+#         num1=num1//10
+#         count=count+1
+#     while(num2):
+#         rem=num2%10
+#         power=rem**count
+#         sum=sum+power
+#         num2=num2//10
+#     if(num==sum):
+#         print("ARMSTRONG NUMBER")
+#     else:
+#         print("NOT A ARMSTRONG NUMBER")
+# armstrong_not()
+#  26.print all armstrong numbers between 1 to 1000
+# ef armstrong_numbers():
+#     list=[]
+#     for i in range(1,1001):
+#         num1=i
+#         num2=i
+#         count=0
+#         sum=0
+#         while(num1):
+#             count=count+1
+#             num1=num1//10
+#         while(num2):
+#             rem=num2%10
+#             power=rem**count
+#             sum=sum+power
+#             num2=num2//10
+#         if(sum==i):
+#             list.append(i)
+#     print(list)
+# armstrong_numbers()
+# 27.spy or not
+# def spy_not():
+#     num=int(input("Enter number: "))
+#     sum=0
+#     product=1
+#     while(num):
+#         rem=num%10
+#         sum=sum+rem
+#         product=product*rem
+#         num=num//10
+#     if(sum==product):
+#         print("SPY NUMBER")
+#     else:
+#         print("NOT A SPY NUBER")
+# spy_not()
+# 28.Find product of digits of a number
+# def product():
+#     num=int(input("Enter number: "))
+#     product=1
+#     while(num):
+#         rem=num%10
+#         product=product*rem
+#         num=num//10
+#     print(product)
+# product()
+# 29.LCM of 2 numbers
+# def lcm_two_num(num1,num2):
+#     largest=max(num1,num2)
+#     while(True):
+#         if(largest%num1==0 and largest%num2==0):
+#             lcm=largest
+#             print(lcm)
+#             break
+#         largest+=1
+# lcm_two_num(86,122)
+#                                                                    30.GCD of 2 numbers
+# def gcd_two_num():
+#     num1=int(input("enter number: "))
+#     num2=int(input("enter number: "))
+#     smallest=min(num1,num2)
+#     gcd=1
+#     for i in range(1,smallest+1):
+#         if(num1%i==0 and num2%i==0):
+#             gcd=i
+#     print(gcd)
+# gcd_two_num()
+#                                                                   31.PERFECT SQUARE
+# def perfect_square():
+#     num=int(input("Enter number: "))
+#     sqrt=int(num**0.5)
+#     if(sqrt*sqrt==num):
+#         print("PERFECT SQUARE")
+#     else:
+#         print("NOT A PERFECT SQUARE")
+# perfect_square()
+#                                                       32.count how many even digits are in a number
+# def even_digits():
+#     num=int(input("Enter number: "))
+#     count=0
+#     while(num):
+#         rem=num%10
+#         if(rem%2==0):
+#             count=count+1
+#         num=num//10
+#     print(count)
+# even_digits()
+#                                                                       33.odd digits
+# def odd_digits():
+#     num=int(input("Enter number: "))
+#     count=0
+#     while(num):
+#         rem=num%10
+#         if(rem%2!=0):
+#             count=count+1
+#         num=num//10
+#     return count
+# print(odd_digits())
+#                                                               34.second largest in a number
+# def second_large():
+#     num=int(input("enter number:"))
+#     large=0
+#     large2=0
+#     while(num):
+#         rem=num%10
+#         if(large<rem):
+#             large2=large
+#             large=rem
+#         elif(large2<rem and rem!=large):
+#             large2=rem
+#         num=num//10
+#     print(large2)
+# second_large()
+#                                                                   35.smallest digit
+# def smallest_digit():
+#     num=int(input("Enter number: "))
+#     small=9
+#     while(num):
+#         rem=num%10
+#         if(small>rem):
+#             small=rem
+#         num=num//10
+#     return small
+# print(smallest_digit())
+#                                                           36.Generate fibonacci series upto N
+# def fib_series(num):
+#     a=0
+#     b=1
+#     print(a)
+#     print(b)
+#     for i in range(2,num):
+#         temp=a+b
+#         a=b
+#         b=temp
+#         print(temp)
+# fib_series(12)
+#                                                   37.check whether a number is fibanocci number or not
+# def fib_series(num):
+#     a=0
+#     b=1
+#     Flag=0
+#     for i in range(2,num):
+#         temp=a+b
+#         a=b
+#         b=temp
+#         if(temp==num):
+#             Flag=True
+#     if(Flag==True):
+#         print("IN FIBONACCI SERIES")
+#     else:
+#         print("NOT IN FIBONACCI SERIES")
+# fib_series(31)
+#                                                               38.print first n fibonacci series
+# def fib_series(num):
+#     a=0
+#     b=1
+#     print(a)
+#     print(b)
+#     for i in range(2,num):
+#         temp=a+b
+#         a=b
+#         b=temp
+#         print(temp)
+# fib_series(12)
+#                                                               39.find Nth fibonacci series
+# def nth_fib(num):
+#     a=0
+#     b=1
+#     for i in range(2,num+1):
+#         sum=a+b
+#         a=b
+#         b=sum
+#     print(sum)
+# nth_fib(12)
+#                                                   40.convert decimal number to binary using loops
+# def dec_bin():
+#     num=int(input("enter number: "))
+#     bin=""
+#     while(num):
+#         rem=num%2
+#         bin=str(rem)+bin
+#         num=num//2
+#     print(bin)
+# dec_bin()
+# ``````````````                                                 41.convert binary to decimal
+# def bin_dec():
+#     num=int(input("Enter number: "))
+#     print(int(num))
+# bin_dec()
+#                                                    42.check whether a number is composite
+# def composite(number):
+#     factors=2
+#     for i in range(2,number):
+#         if(number%i==0):
+#             factors=factors+1
+#     if(factors>2):
+#         print("COMPOSITE NUMBER")
+#     else:
+#         print("NOT A COMPOSITE NUMBER")
+# composite(102)
+#                                               43.print all composite numbers from 1 to 100
+# def composite_numbers():
+#     for i in range(1,101):
+#         factors=0
+#         for j in range(1,i+1):
+#             if(i%j==0):
+#                 factors=factors+1
+#         if(factors>2):
+#             print(i)
+# composite_numbers()
+# `````````````````````````````````````````````44.check whether a number is harshad number
+# def harshad():
+#     num=int(input("Enter number: "))
+#     num1=num
+#     sum=0
+#     while(num1):
+#         rem=num1%10
+#         sum=sum+rem
+#         num1=num1//10
+#     if(num%sum==0):
+#         print("HARSHAD NUMBER")
+#     else:
+#         print("NOT A HARSHAD NUMBER")
+# harshad()
+# 45.check whether a number is duck number
+
+# ```````````````````````````````````````46.check whether a number is automorphic number
+# def automorphic(num):
+#     sqrt=num**2
+#     rem1=sqrt%10
+#     rem=num%10
+#     if(rem1==rem):
+#         print("AUTOMORPHIC NUMBER")
+#     else:
+#         print("NOT AN AUTOMORPHIC NUMBER")
+# automorphic(25)
+# `````````````````````````````````````````````````47.Find digital root of number
+# def digital_root(num):
+#     sum=0
+#     while(num>9):
+#         sum=0
+#         while(num):
+#             rem=num%10
+#             sum=sum+rem
+#             num=num//10
+#         num=sum
+#     return sum
+# result=digital_root(123)
+# print(result)
+# ````````````````````````````````````````48.Check whether a number is neon number or not
+# def neon_not():
+#     num=int(input("Enter number: "))
+#     num1=num
+#     sum=0
+#     while(num1):
+#         rem=num1%10
+#         pro=rem**1
+#         sum=sum+pro
+#         num1=num1//10
+#     if(num==sum):
+#         print("NEON NUMBER")
+#     else:
+#         print("NOT A NEON NUMBER")
+# neon_not()
+# ``````````````````````````````````49.print numbers whose sum of digits is even
+# def sum_digits():
+#     list=[]
+#     for i in range(1,101):
+#         sum=0
+#         num=i
+#         while(num):
+#             rem=num%10
+#             sum=sum+rem
+#             num=num//10
+#         if(sum%2==0):
+#             list.append(i)
+#     print(list)
+# sum_digits()
+# ``````````````````````````````50.check whether a number is magic number or not
+# def magic_not(num):
+#     sum=0
+#     while(num>9):
+#         sum=0
+#         while(num):
+#             rem=num%10
+#             sum=sum+rem
+#             num=num//10
+#         num=sum
+#     if(num==1):
+#         return "MAGIC NUMBER"
+#     else:
+#         return "NOT A MAGIC NUMBER"
+# result=magic_not(123)
+# print(result)

@@ -41,9 +41,15 @@ l1.append("sal ram")
 # print(id(l2[-1]))
 
 #packing and unpacking 
-l1=[1,2,3,4,5]
-a,b,*c=l1
-print(l1)
-print(a)
-print(b)
-print(c)
+# l1=[1,2,3,4,5]
+# a,b,*c=l1
+# print(l1)
+# print(a)
+# print(b)
+# print(c)
+
+#merging the list 
+
+l1=["vishnu teja","korada"]
+l2=["was","python developer"]
+print(l1+l2)
