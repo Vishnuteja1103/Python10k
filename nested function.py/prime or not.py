@@ -11,6 +11,6 @@ def outer():
         if count!=2:
             print("prime number")
         else:
-            print("not aprime number")
+            print("not a prime number")
     inner(5)
 outer()
